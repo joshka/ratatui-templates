@@ -1,0 +1,2 @@
+[placeholders]
+project-description = { prompt = "Project description", default = "", type = "string" }
