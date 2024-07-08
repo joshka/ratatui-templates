@@ -1,2 +1,7 @@
+[template]
+
 [placeholders]
 project-description = { prompt = "Project description", default = "", type = "string" }
+
+[hooks]
+pre = ["pre-script.rhai"]
