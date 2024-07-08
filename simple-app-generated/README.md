@@ -1,12 +1,12 @@
-# [Sample Output](https://github.com/joshka/sample-output)
+# [Simple App Generated](https://github.com/joshka/simple-app-generated)
 
-Sample application using <https://github.com/joshka/ratatui-templates>
+Generated from the simple-app template in <https://github.com/joshka/ratatui-templates>
 
 ## Installation
 
 ```shell
-cargo install --locked sample-output
-sample-output
+cargo install --locked simple-app-generated
+simple-app-generated
 ```
 
 ## License

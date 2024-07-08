@@ -1,6 +1,6 @@
 # Contribution guidelines
 
-First off, thank you for considering contributing to sample-output.
+First off, thank you for considering contributing to simple-app-generated.
 
 If your contribution is not straightforward, please first discuss the change you
 wish to make by creating a new issue before making the change.
@@ -8,7 +8,7 @@ wish to make by creating a new issue before making the change.
 ## Reporting issues
 
 Before reporting an issue on the
-[issue tracker](https://github.com/joshka/sample-output/issues),
+[issue tracker](https://github.com/joshka/simple-app-generated/issues),
 please check that it has not already been reported by searching for some related
 keywords.
 
@@ -55,8 +55,8 @@ A specification for adding human and machine readable meaning to commit messages
 This is no different than other Rust projects.
 
 ```shell
-git clone https://github.com/joshka/sample-output
-cd sample-output
+git clone https://github.com/joshka/simple-app-generated
+cd simple-app-generated
 cargo test
 cargo run
 ```

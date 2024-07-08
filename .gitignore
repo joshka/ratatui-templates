@@ -1,2 +1,3 @@
 /target
-sample-output/Cargo.lock
+simple-app-generated/Cargo.lock
+simple-app-generated/target
