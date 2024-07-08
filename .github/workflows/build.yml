@@ -14,17 +14,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      PROJECT_NAME: mytemplate
+      PROJECT_NAME: simple-test-project
     steps:
-      - uses: actions/checkout@v4
-      - uses: cargo-generate/cargo-generate-action@latest
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Generate project
+        uses: cargo-generate/cargo-generate-action@latest
         with:
           name: ${{ env.PROJECT_NAME }}
-      - uses: dtolnay/rust-toolchain@stable
+          template: simple
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
       # we need to move the generated project to a temp folder, away from the template project
-      # otherwise `cargo` runs would fail
-      # see https://github.com/rust-lang/cargo/issues/9922
-      - run: |
+      # otherwise `cargo` runs fail. See https://github.com/rust-lang/cargo/issues/9922
+      - name: Check project
+        run: |
           mv $PROJECT_NAME ${{ runner.temp }}/
           cd ${{ runner.temp }}/$PROJECT_NAME
           cargo check
